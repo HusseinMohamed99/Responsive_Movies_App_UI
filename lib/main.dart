@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:movies_app_ui/screens/OnBoarding/onboarding_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -7,16 +9,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Material App Bar'),
+
+        title: 'Material App', 
+               debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          fontFamily: GoogleFonts.openSans().fontFamily,
         ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      ),
-    );
+        home: const OnBoardingScreen());
+  
   }
 }
