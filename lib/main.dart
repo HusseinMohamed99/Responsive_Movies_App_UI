@@ -11,12 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Material App',
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          scaffoldBackgroundColor: ColorsManager.kBlackColor,
-          fontFamily: GoogleFonts.openSans().fontFamily,
-        ),
-        home: const OnBoardingScreen());
+      title: 'Material App',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        scaffoldBackgroundColor: ColorsManager.kBlackColor,
+        fontFamily: GoogleFonts.openSans().fontFamily,
+      ),
+      home: const OnBoardingScreen(),
+    );
   }
 }

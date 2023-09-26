@@ -72,7 +72,9 @@ class OnBoardingScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     SizedBox(
-                      height: screenHeight * 0.07,
+                      height: screenHeight <= 568
+                          ? screenHeight * 0.02
+                          : screenHeight * 0.07,
                     ),
                     CustomOutline(
                       strokeWidth: 4,
@@ -129,7 +131,7 @@ class OnBoardingScreen extends StatelessWidget {
                       height: screenHeight * 0.05,
                     ),
                     Text(
-                      'Download and watch offline\n wherever you are ',
+                      'Download and watch offline\n wherever you are',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: screenHeight <= 568 ? 12 : 16,
