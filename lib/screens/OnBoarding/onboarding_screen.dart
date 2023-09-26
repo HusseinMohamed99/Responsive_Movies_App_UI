@@ -2,6 +2,8 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:movies_app_ui/components/custom_outline.dart';
+import 'package:movies_app_ui/components/navigator.dart';
+import 'package:movies_app_ui/screens/Home/home_screen.dart';
 import 'package:movies_app_ui/utils/Assets/assets_manager.dart';
 import 'package:movies_app_ui/utils/Colors/colors_manager.dart';
 
@@ -14,7 +16,6 @@ class OnBoardingScreen extends StatelessWidget {
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       extendBody: true,
-      backgroundColor: ColorsManager.kBlackColor,
       body: SizedBox(
         width: screenWidth,
         height: screenHeight,
@@ -141,12 +142,7 @@ class OnBoardingScreen extends StatelessWidget {
                     ),
                     GestureDetector(
                       onTap: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //     builder: (context) => HomePage(),
-                        //   ),
-                        // );
+                        navigateTo(context, const HomeScreen());
                       },
                       child: CustomOutline(
                         strokeWidth: 3,
