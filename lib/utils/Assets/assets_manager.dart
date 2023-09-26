@@ -1,6 +1,4 @@
-
 class AssetsManager {
-
   // Assets Manager Icon
   static const String kIconHome = 'assets/svg/icon-home.svg';
   static const String kIconPlayOnTv = 'assets/svg/icon-playtv.svg';
@@ -18,4 +16,13 @@ class AssetsManager {
   static const String kMaskLastIndex = 'assets/mask/mask_lastIndex.png';
   static const String kMaskCenter = 'assets/mask/mask.png';
   static const String kMaskCast = 'assets/mask/mask_cast.png';
+
+  // Assets Manager Image
+  static const String kOnBoarding = 'assets/img-onboarding.png';
+  static const String kAquaman = 'assets/movie-posters/img-aquaman.jpg';
+  static const String kBatman = 'assets/movie-posters/img-aquaman.jpg';
+  static const String kEternals = 'assets/movie-posters/img-eternals.jpg';
+  static const String kMatrix = 'assets/movie-posters/img-matrix.jpg';
+  static const String kSonic = 'assets/movie-posters/img-sonic.jpg';
+  static const String kSpiderman = 'assets/movie-posters/img-spiderman.jpg';
 }
