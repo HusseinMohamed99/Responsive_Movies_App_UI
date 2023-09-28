@@ -4,8 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:glassmorphism/glassmorphism.dart';
 import 'package:movies_app_ui/components/masked_image.dart';
+import 'package:movies_app_ui/components/navigator.dart';
 import 'package:movies_app_ui/components/search_widget.dart';
 import 'package:movies_app_ui/models/movie.dart';
+import 'package:movies_app_ui/screens/Movies/movies_details.dart';
 import 'package:movies_app_ui/utils/Assets/assets_manager.dart';
 import 'package:movies_app_ui/utils/Colors/colors_manager.dart';
 
@@ -148,6 +150,9 @@ class HomeScreen extends StatelessWidget {
                           mask = AssetsManager.kMaskCenter;
                         }
                         return GestureDetector(
+                          onTap: () {
+                            navigateTo(context, const MoviesDetailsScreen());
+                          },
                           child: Container(
                             margin: const EdgeInsets.only(left: 27),
                             width: index == 1 ? 162 : 136,
@@ -196,6 +201,9 @@ class HomeScreen extends StatelessWidget {
                           mask = AssetsManager.kMaskCenter;
                         }
                         return GestureDetector(
+                          onTap: () {
+                            navigateTo(context, const MoviesDetailsScreen());
+                          },
                           child: Container(
                             margin: const EdgeInsets.only(left: 27),
                             width: index == 1 ? 162 : 136,
