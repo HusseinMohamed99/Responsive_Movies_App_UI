@@ -255,10 +255,12 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButtonLocation:
+          FloatingActionButtonLocation.miniCenterDocked,
       bottomNavigationBar: GlassmorphicContainer(
+        alignment: Alignment.center,
         width: screenWidth,
-        height: 96,
+        height: 70,
         borderRadius: 0,
         linearGradient: LinearGradient(
           begin: Alignment.topCenter,
