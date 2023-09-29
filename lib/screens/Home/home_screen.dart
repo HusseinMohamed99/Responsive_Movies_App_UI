@@ -8,7 +8,7 @@ import 'package:movies_app_ui/components/navigator.dart';
 import 'package:movies_app_ui/components/search_widget.dart';
 import 'package:movies_app_ui/models/movie.dart';
 import 'package:movies_app_ui/screens/Movies/popular_movies_details.dart';
-import 'package:movies_app_ui/screens/Movies/upComing_movies_details..dart';
+import 'package:movies_app_ui/screens/Movies/upcoming_movies_details.dart';
 import 'package:movies_app_ui/utils/Assets/assets_manager.dart';
 import 'package:movies_app_ui/utils/Colors/colors_manager.dart';
 
