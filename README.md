@@ -1,6 +1,6 @@
 #Responsive_Movies_App_UI
 
-## Download The App![GitHub All Releases](https://img.shields.io/github/downloads/HusseinMohamed99/Chat_GPT/total?color=green)
+## Download The App![GitHub All Releases](https://img.shields.io/github/downloads/HusseinMohamed99/Responsive_Movies_App_UI/total?color=green)
 <a href="https://github.com/HusseinMohamed99/Responsive_Movies_App_UI/releases/download/v1.0.0/Responsive.Movies.App.apk"><img src="https://playerzon.com/asset/download.png" width="200">
 </img></a>
 
