@@ -7,7 +7,8 @@ import 'package:movies_app_ui/components/masked_image.dart';
 import 'package:movies_app_ui/components/navigator.dart';
 import 'package:movies_app_ui/components/search_widget.dart';
 import 'package:movies_app_ui/models/movie.dart';
-import 'package:movies_app_ui/screens/Movies/movies_details.dart';
+import 'package:movies_app_ui/screens/Movies/popular_movies_details.dart';
+import 'package:movies_app_ui/screens/Movies/upComing_movies_details..dart';
 import 'package:movies_app_ui/utils/Assets/assets_manager.dart';
 import 'package:movies_app_ui/utils/Colors/colors_manager.dart';
 
@@ -151,7 +152,11 @@ class HomeScreen extends StatelessWidget {
                         }
                         return GestureDetector(
                           onTap: () {
-                            navigateTo(context, const MoviesDetailsScreen());
+                            navigateTo(
+                                context,
+                                PopularMoviesDetailsScreen(
+                                  index: index,
+                                ));
                           },
                           child: Container(
                             margin: const EdgeInsets.only(left: 27),
@@ -202,7 +207,12 @@ class HomeScreen extends StatelessWidget {
                         }
                         return GestureDetector(
                           onTap: () {
-                            navigateTo(context, const MoviesDetailsScreen());
+                            navigateTo(
+                              context,
+                              UpcomingMoviesDetailsScreen(
+                                index: index,
+                              ),
+                            );
                           },
                           child: Container(
                             margin: const EdgeInsets.only(left: 27),
