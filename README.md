@@ -1,16 +1,16 @@
-# movies_app_ui
+#Responsive_Movies_App_UI
 
-A new Flutter project.
+## Download The App![GitHub All Releases](https://img.shields.io/github/downloads/HusseinMohamed99/Chat_GPT/total?color=green)
+<a href="https://github.com/HusseinMohamed99/Chat_GPT/releases/download/v1.0.0/ChatGPT.apk"><img src="https://playerzon.com/asset/download.png" width="200">
+</img></a>
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+<p>
 
-A few resources to get you started if this is your first Flutter project:
+  <img src="https://github.com/HusseinMohamed99/Responsive_Movies_App_UI/assets/84459939/8cb177a9-a62c-4daf-a374-2798204f3690" width="250" />
+    <img src="https://github.com/HusseinMohamed99/Responsive_Movies_App_UI/assets/84459939/733639f4-c6db-4544-bf76-3feafe788bd9 " width="250" />
+    <img src="https://github.com/HusseinMohamed99/Responsive_Movies_App_UI/assets/84459939/cc7d3574-5a0d-4379-9a4d-3a26f3e3e955 " width="250" />
+    <img src="https://github.com/HusseinMohamed99/Responsive_Movies_App_UI/assets/84459939/06853c07-6b59-4a16-b3ce-1d26f8b9e802" width="250" />
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  </p>
+  
