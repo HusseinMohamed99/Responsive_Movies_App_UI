@@ -72,9 +72,9 @@ class OnBoardingScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     SizedBox(
-                      height: screenHeight <= 568
+                      height: screenHeight <= 600
                           ? screenHeight * 0.02
-                          : screenHeight * 0.07,
+                          : screenHeight * 0.03,
                     ),
                     CustomOutline(
                       strokeWidth: 4,
@@ -116,13 +116,13 @@ class OnBoardingScreen extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: screenHeight * 0.09,
+                      height: screenHeight * 0.04,
                     ),
                     Text(
                       'Watch movies in \n Virtual Reality',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontSize: screenHeight <= 568 ? 18 : 34,
+                        fontSize: screenHeight <= 600 ? 18 : 34,
                         fontWeight: FontWeight.w700,
                         color: ColorsManager.kWhiteColor.withOpacity(0.8),
                       ),
@@ -134,7 +134,7 @@ class OnBoardingScreen extends StatelessWidget {
                       'Download and watch offline\n wherever you are',
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontSize: screenHeight <= 568 ? 12 : 16,
+                        fontSize: screenHeight <= 600 ? 12 : 16,
                         fontWeight: FontWeight.w100,
                         color: ColorsManager.kWhiteColor.withOpacity(0.75),
                       ),
@@ -177,7 +177,7 @@ class OnBoardingScreen extends StatelessWidget {
                               'Sign Up',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontSize: screenHeight <= 568 ? 11 : 15,
+                                fontSize: screenHeight <= 600 ? 11 : 15,
                                 fontWeight: FontWeight.w700,
                                 color: ColorsManager.kWhiteColor,
                               ),

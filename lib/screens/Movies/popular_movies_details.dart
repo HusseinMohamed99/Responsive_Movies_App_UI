@@ -42,7 +42,7 @@ class PopularMoviesDetailsScreen extends StatelessWidget {
                     child: Container(
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          fit: BoxFit.fitWidth,
+                          fit: BoxFit.fill,
                           image: AssetImage(newMovies[index].moviePoster),
                         ),
                       ),
@@ -290,172 +290,176 @@ class PopularMoviesDetailsScreen extends StatelessWidget {
                             padding: const EdgeInsets.symmetric(
                               horizontal: 23,
                             ),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                const Row(
-                                  children: [
-                                    Text(
-                                      'Casts',
-                                      style: TextStyle(
-                                        color: ColorsManager.kWhiteColor,
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.w700,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                SizedBox(
-                                  height: screenHeight <= 568 ? 9 : 12,
-                                ),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    CircleAvatar(
-                                      backgroundColor: Colors.orange,
-                                      minRadius: 14,
-                                      maxRadius: screenWidth <= 375 ? 16 : 25,
-                                      backgroundImage: const NetworkImage(
-                                        'https://m.media-amazon.com/images/M/MV5BODg3MzYwMjE4N15BMl5BanBnXkFtZTcwMjU5NzAzNw@@._V1_.jpg',
-                                      ),
-                                    ),
-                                    Expanded(
-                                      child: Container(
-                                        constraints: const BoxConstraints(
-                                          maxHeight: 40,
-                                          maxWidth: 112,
-                                        ),
-                                        transform:
-                                            Matrix4.translationValues(-6, 0, 0),
-                                        child: Stack(
-                                          clipBehavior: Clip.none,
-                                          children: [
-                                            const MaskedImage(
-                                              asset: AssetsManager.kMaskCast,
-                                              mask: AssetsManager.kMaskCast,
-                                            ),
-                                            Padding(
-                                              padding: const EdgeInsets.only(
-                                                left: 16.0,
-                                              ),
-                                              child: Align(
-                                                alignment: Alignment.centerLeft,
-                                                child: Text(
-                                                  newMovies[index]
-                                                      .movieCastName[0]
-                                                      .toString(),
-                                                  style: const TextStyle(
-                                                    color: Colors.white,
-                                                    fontSize: 13,
-                                                  ),
-                                                  maxLines: 2,
-                                                ),
-                                              ),
-                                            )
-                                          ],
+                            child: SingleChildScrollView(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  const Row(
+                                    children: [
+                                      Text(
+                                        'Casts',
+                                        style: TextStyle(
+                                          color: ColorsManager.kWhiteColor,
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w700,
                                         ),
                                       ),
-                                    ),
-                                    CircleAvatar(
-                                      backgroundColor: Colors.orange,
-                                      minRadius: 14,
-                                      maxRadius: screenWidth <= 375 ? 16 : 25,
-                                      backgroundImage: const NetworkImage(
-                                        'https://m.media-amazon.com/images/M/MV5BODg3MzYwMjE4N15BMl5BanBnXkFtZTcwMjU5NzAzNw@@._V1_.jpg',
-                                      ),
-                                    ),
-                                    Expanded(
-                                      child: Container(
-                                        constraints: const BoxConstraints(
-                                          maxHeight: 40,
-                                          maxWidth: 112,
-                                        ),
-                                        transform:
-                                            Matrix4.translationValues(-6, 0, 0),
-                                        child: Stack(
-                                          clipBehavior: Clip.none,
-                                          children: [
-                                            const MaskedImage(
-                                              asset: AssetsManager.kMaskCast,
-                                              mask: AssetsManager.kMaskCast,
-                                            ),
-                                            Padding(
-                                              padding: const EdgeInsets.only(
-                                                left: 16.0,
-                                              ),
-                                              child: Align(
-                                                alignment: Alignment.centerLeft,
-                                                child: Text(
-                                                  newMovies[index]
-                                                      .movieCastName[1]
-                                                      .toString(),
-                                                  style: const TextStyle(
-                                                    color: Colors.white,
-                                                    fontSize: 13,
-                                                  ),
-                                                  maxLines: 2,
-                                                ),
-                                              ),
-                                            )
-                                          ],
+                                    ],
+                                  ),
+                                  SizedBox(
+                                    height: screenHeight <= 568 ? 9 : 12,
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      CircleAvatar(
+                                        backgroundColor: Colors.orange,
+                                        minRadius: 14,
+                                        maxRadius: screenWidth <= 375 ? 16 : 25,
+                                        backgroundImage: const NetworkImage(
+                                          'https://m.media-amazon.com/images/M/MV5BODg3MzYwMjE4N15BMl5BanBnXkFtZTcwMjU5NzAzNw@@._V1_.jpg',
                                         ),
                                       ),
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    CircleAvatar(
-                                      backgroundColor: Colors.orange,
-                                      minRadius: 16,
-                                      maxRadius: screenWidth <= 375 ? 18 : 25,
-                                      backgroundImage: const NetworkImage(
-                                        'https://m.media-amazon.com/images/M/MV5BODg3MzYwMjE4N15BMl5BanBnXkFtZTcwMjU5NzAzNw@@._V1_.jpg',
-                                      ),
-                                    ),
-                                    Container(
-                                      constraints: const BoxConstraints(
-                                        maxHeight: 40,
-                                        maxWidth: 112,
-                                      ),
-                                      transform:
-                                          Matrix4.translationValues(-6, 0, 0),
-                                      child: Stack(
-                                        clipBehavior: Clip.none,
-                                        children: [
-                                          const MaskedImage(
-                                            asset: AssetsManager.kMaskCast,
-                                            mask: AssetsManager.kMaskCast,
+                                      Expanded(
+                                        child: Container(
+                                          constraints: const BoxConstraints(
+                                            maxHeight: 40,
+                                            maxWidth: 112,
                                           ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                              left: 16.0,
-                                            ),
-                                            child: Align(
-                                              alignment: Alignment.centerLeft,
-                                              child: Text(
-                                                newMovies[index]
-                                                    .movieCastName[2]
-                                                    .toString(),
-                                                style: const TextStyle(
-                                                  color: Colors.white,
-                                                  fontSize: 13,
-                                                ),
-                                                maxLines: 2,
+                                          transform: Matrix4.translationValues(
+                                              -6, 0, 0),
+                                          child: Stack(
+                                            clipBehavior: Clip.none,
+                                            children: [
+                                              const MaskedImage(
+                                                asset: AssetsManager.kMaskCast,
+                                                mask: AssetsManager.kMaskCast,
                                               ),
-                                            ),
-                                          )
-                                        ],
+                                              Padding(
+                                                padding: const EdgeInsets.only(
+                                                  left: 16.0,
+                                                ),
+                                                child: Align(
+                                                  alignment:
+                                                      Alignment.centerLeft,
+                                                  child: Text(
+                                                    newMovies[index]
+                                                        .movieCastName[0]
+                                                        .toString(),
+                                                    style: const TextStyle(
+                                                      color: Colors.white,
+                                                      fontSize: 13,
+                                                    ),
+                                                    maxLines: 2,
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
                                       ),
-                                    ),
-                                  ],
-                                ),
-                              ],
+                                      CircleAvatar(
+                                        backgroundColor: Colors.orange,
+                                        minRadius: 14,
+                                        maxRadius: screenWidth <= 375 ? 16 : 25,
+                                        backgroundImage: const NetworkImage(
+                                          'https://m.media-amazon.com/images/M/MV5BODg3MzYwMjE4N15BMl5BanBnXkFtZTcwMjU5NzAzNw@@._V1_.jpg',
+                                        ),
+                                      ),
+                                      Expanded(
+                                        child: Container(
+                                          constraints: const BoxConstraints(
+                                            maxHeight: 40,
+                                            maxWidth: 112,
+                                          ),
+                                          transform: Matrix4.translationValues(
+                                              -6, 0, 0),
+                                          child: Stack(
+                                            clipBehavior: Clip.none,
+                                            children: [
+                                              const MaskedImage(
+                                                asset: AssetsManager.kMaskCast,
+                                                mask: AssetsManager.kMaskCast,
+                                              ),
+                                              Padding(
+                                                padding: const EdgeInsets.only(
+                                                  left: 16.0,
+                                                ),
+                                                child: Align(
+                                                  alignment:
+                                                      Alignment.centerLeft,
+                                                  child: Text(
+                                                    newMovies[index]
+                                                        .movieCastName[1]
+                                                        .toString(),
+                                                    style: const TextStyle(
+                                                      color: Colors.white,
+                                                      fontSize: 13,
+                                                    ),
+                                                    maxLines: 2,
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      CircleAvatar(
+                                        backgroundColor: Colors.orange,
+                                        minRadius: 16,
+                                        maxRadius: screenWidth <= 375 ? 18 : 25,
+                                        backgroundImage: const NetworkImage(
+                                          'https://m.media-amazon.com/images/M/MV5BODg3MzYwMjE4N15BMl5BanBnXkFtZTcwMjU5NzAzNw@@._V1_.jpg',
+                                        ),
+                                      ),
+                                      Container(
+                                        constraints: const BoxConstraints(
+                                          maxHeight: 40,
+                                          maxWidth: 112,
+                                        ),
+                                        transform:
+                                            Matrix4.translationValues(-6, 0, 0),
+                                        child: Stack(
+                                          clipBehavior: Clip.none,
+                                          children: [
+                                            const MaskedImage(
+                                              asset: AssetsManager.kMaskCast,
+                                              mask: AssetsManager.kMaskCast,
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                left: 16.0,
+                                              ),
+                                              child: Align(
+                                                alignment: Alignment.centerLeft,
+                                                child: Text(
+                                                  newMovies[index]
+                                                      .movieCastName[2]
+                                                      .toString(),
+                                                  style: const TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: 13,
+                                                  ),
+                                                  maxLines: 2,
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),

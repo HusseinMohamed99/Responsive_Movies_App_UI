@@ -228,6 +228,9 @@ class HomeScreen extends StatelessWidget {
                       itemCount: upcomingMovies.length,
                     ),
                   ),
+                  SizedBox(
+                    height: screenHeight * 0.06,
+                  ),
                 ],
               ),
             ),
