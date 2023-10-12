@@ -13,7 +13,7 @@
     <img src="https://github.com/HusseinMohamed99/Responsive_Movies_App_UI/assets/84459939/06853c07-6b59-4a16-b3ce-1d26f8b9e802" width="250" />
   </p>
   
-Version1
+Responsive Movies App UI
 :-:
   <video src='https://github.com/HusseinMohamed99/Responsive_Movies_App_UI/assets/84459939/af31cf51-8734-4389-b09a-cee25efbbf5f' width=250/> |
 
